@@ -23,6 +23,13 @@ export default function createServer({
 			title: "Hello Tool",
 			description: "Say hello to someone",
 			inputSchema: { name: z.string().describe("Name to greet") },
+			annotations: {
+				title: "Hello Tool",
+				readOnlyHint: true,
+				destructiveHint: false,
+				idempotentHint: true,
+				openWorldHint: false
+			}
 		},
 		async ({ name }) => ({
 			content: [
