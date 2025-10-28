@@ -13,10 +13,7 @@ export default function createServer({
 }) {
 	const server = new McpServer({
 		name: "Say Hello",
-		version: "1.0.0",
-		metadata: {
-			icon: "icon.png"
-		}
+		version: "1.0.0"
 	})
 
 	// Add a tool
