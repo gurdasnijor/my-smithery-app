@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Hello Server Configuration",
+  "description": "Configuration schema for the Hello MCP Server",
+  "type": "object",
+  "properties": {
+    "debug": {
+      "type": "boolean",
+      "description": "Enable debug logging for troubleshooting and development",
+      "default": false,
+      "examples": [true, false]
+    }
+  },
+  "required": [],
+  "additionalProperties": false,
+  "examples": [
+    {
+      "debug": false
+    },
+    {
+      "debug": true
+    }
+  ]
+}
