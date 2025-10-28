@@ -13,10 +13,7 @@ export default function createServer({
 }) {
 	const server = new McpServer({
 		name: "Say Hello",
-		version: "1.0.0",
-		metadata: {
-			icon: "icon.png"
-		}
+		version: "1.0.0"
 	})
 
 	// Add a tool
@@ -27,7 +24,7 @@ export default function createServer({
 			description: "Say hello to someone",
 			inputSchema: { name: z.string().describe("Name to greet") },
 			annotations: {
-				title: "Hello Tool 2",
+				title: "Hello Tool",
 				readOnlyHint: true,
 				destructiveHint: false,
 				idempotentHint: true,
